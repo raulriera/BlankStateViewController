@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AE3DBEEE-10C4-4C59-8E4C-DC44F65E9448</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BlankState</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>352938218382B1B42FD5FCD675D164D02F6A8D82</key>
+		<string>https://github.com/raulriera/BlankStateViewController.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BlankState/BlankState.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>352938218382B1B42FD5FCD675D164D02F6A8D82</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/raulriera/BlankStateViewController.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>352938218382B1B42FD5FCD675D164D02F6A8D82</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>352938218382B1B42FD5FCD675D164D02F6A8D82</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BlankStateViewController</string>
+		</dict>
+	</array>
+</dict>
+</plist>

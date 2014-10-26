@@ -8,10 +8,10 @@ Convenience view controller to hide content on errors, present a loading message
 
 ## Usage:
 
-Simply init the view controller from a storyboard, include the title and message that you want to display and present it.
+Simply init the view controller from the `BlankState` storyboard, include the title and message that you want to display and present it. You can add as many View Controller as you want to create several designs for these views.
 
 ```objective-c
-self.blankStateViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"BlankStateViewController"];
+self.blankStateViewController = [[UIStoryboard storyboardWithName:@"BlankState" bundle:nil] instantiateViewControllerWithIdentifier:@"BlankStateViewController"];
 
 [self.blankStateViewController setTitle:@"Location Services are disabled" andMessage:@"Please enable location services in your device 'Settings' screen"];
 
