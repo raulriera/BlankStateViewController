@@ -10,6 +10,12 @@
 
 @interface BlankStateViewController : UIViewController
 
+/*!
+ *	Use this method to initialize the view controller with the information of your choosing
+ *
+ *	@param title   heading text
+ *	@param message message text
+ */
 - (void)setTitle:(NSString *)title andMessage:(NSString *)message;
 
 @end

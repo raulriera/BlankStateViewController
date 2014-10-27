@@ -8,14 +8,26 @@ Convenience view controller to hide content on errors, present a loading message
 
 ## Usage:
 
-Simply init the view controller from the `BlankState` storyboard, include the title and message that you want to display and present it. You can add as many View Controller as you want to create several designs for these views.
+Simply import the category provided and call `overlayBlankStateViewWithTitle:message` method. There are other convenience methods that I encorage your to check to expand this controller to various needs. For example, you can add as many View Controller as you want to create several designs for these views.
+
+Below you can find an example of this view used to overlay a message when there is no location permission.
 
 ```objective-c
-self.blankStateViewController = [[UIStoryboard storyboardWithName:@"BlankState" bundle:nil] instantiateViewControllerWithIdentifier:@"BlankStateViewController"];
+- (void)locationManager:(CLLocationManager *)locationManager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
+{
+    if (status == kCLAuthorizationStatusAuthorizedWhenInUse
+        || status == kCLAuthorizationStatusAuthorizedAlways) {
 
-[self.blankStateViewController setTitle:@"Location Services are disabled" andMessage:@"Please enable location services in your device 'Settings' screen"];
+        if (self.isBlankStateViewOverlayPresent) {
+            [self removeBlankStateViewOverlay];
+        }
 
-[self presentViewController:self.blankStateViewController animated:NO completion:nil];
+        [self displayStationInformation];
+
+    } else if (status == kCLAuthorizationStatusDenied) {
+        [self overlayBlankStateViewWithTitle:NSLocalizedString(@"Location Services are disabled", @"Generic title when the localisation is disabled") message:NSLocalizedString(@"Please enable location services in your device 'Settings' screen", @"Instructions on how to enable location services")];
+    }
+}
 ```
 
 ## About:

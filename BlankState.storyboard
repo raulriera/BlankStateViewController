@@ -9,7 +9,7 @@
         <scene sceneID="wfy-Jw-trL">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oex-LA-PY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="BlankStateViewController" id="xN1-N7-7Ro" customClass="BlankStateViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlankStateViewControllerDefault" id="xN1-N7-7Ro" customClass="BlankStateViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ecK-TJ-C5U"/>
                         <viewControllerLayoutGuide type="bottom" id="NbK-Lo-H9x"/>
