@@ -15,13 +15,24 @@ typedef enum : NSUInteger {
 
 @interface UIViewController (BlankStateViewController)
 
+/*!
+ *	Use this method to present the default type of 'Blank State View'
+ *
+ *	@param title   text to display
+ *	@param message text to display
+ */
 - (void)overlayBlankStateViewWithTitle:(NSString *)title message:(NSString *)message;
 
 /*!
- *	Use this method to remove any blank state view overlays present in the view stack
+ *	Use this method to remove any 'Blank State View' that overlays present in the view stack
  */
 - (void)removeBlankStateViewOverlay;
 
+/*!
+ *	Use this method if you wish to check if the 'Blank State View' is present in the current stack
+ *
+ *	@return YES if the view is present in the view stack
+ */
 - (BOOL)isBlankStateViewOverlayPresent;
 
 @end
