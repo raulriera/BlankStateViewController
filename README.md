@@ -22,7 +22,7 @@ Below you can find an example of this view used to overlay a message when there 
             [self removeBlankStateViewOverlay];
         }
 
-        [self displayStationInformation];
+        // Do something with the location
 
     } else if (status == kCLAuthorizationStatusDenied) {
         [self overlayBlankStateViewWithTitle:NSLocalizedString(@"Location Services are disabled", @"Generic title when the localisation is disabled") message:NSLocalizedString(@"Please enable location services in your device 'Settings' screen", @"Instructions on how to enable location services")];
